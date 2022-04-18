@@ -61,7 +61,7 @@ body{
 /* MAIN */
 
 main{
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .contenedor{
     width: 100%;
@@ -79,11 +79,14 @@ main{
     line-height: 26px;
 }
 .article__h2{
-    margin-top: 20px;
     display: block;
     text-align: center;
     text-decoration: underline;
     font-size: 28px;
+}
+.hr{
+    width: 90%;
+    margin: 40px auto 20px;
 }
 .h2{
     margin: 0 0 20px;
