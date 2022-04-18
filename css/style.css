@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.listas li{
+    display: inline-block;
+}
+.links{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 9px;
+}
+.links:hover{
+    background-color: white;
+    color: black;
+}
+.contenedor__title{
+    position: relative;
+    background-image: url(../img/imgHeader.jpg);
+    height: 101vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__title::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,rgba(14, 129, 138, 0.199),rgba(139, 12, 165, 0.123));
+}
+.titleMain{
+    color: white;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+/* MAIN */
+
+main{
+    padding-top: 40px;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 50px auto 0;
+}
+.contenedor div{
+    width: 90%;
+    margin: auto;
+}
+.contenedor div p{
+    line-height: 26px;
+}
+.article__h2{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 28px;
+}
+.h2{
+    margin: 0 0 20px;
+}
+.img{
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+}
+/* FOOTER */
+
+footer{
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer div i{
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px;
+}
+@media screen and (min-width:780px){
+    .links{
+        font-size: 20px;
+        padding: 14px 9px;
+    }
+    .titleMain{
+        font-size: 100px;
+    }
+    .contenedor{
+        width: 90%;
+        flex-direction: row;
+    }
+    .contenedor1{
+        flex-direction: row-reverse;
+    }
+    .titleP{
+        font-size: 35px;
+    }
+    .h2{
+        margin-bottom: 40px;
+    }
+    .article__h2{
+        margin-top: 80px;
+    }
+    footer{
+        margin-top: 30px;
+    }
+    footer h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    footer div i{
+        font-size: 25px;
+        padding: 10px;
+    }
+}
